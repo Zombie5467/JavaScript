@@ -1,5 +1,8 @@
 /* eslint-disable no-console */
+// --------------------------------------------------------------
 // prueba
+// --------------------------------------------------------------
+
 console.log('JavaScript es Fácil');
 
 function saludar(nombre) {

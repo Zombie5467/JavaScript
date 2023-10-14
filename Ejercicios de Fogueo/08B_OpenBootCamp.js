@@ -14,7 +14,7 @@
 
 // Crear clase Persona.
 
-// Crear variables las privadas edad, nombre y telefono de la clase Persona.
+// Crear variables las privadas edad, nombre y teléfono de la clase Persona.
 
 class Persona {
   constructor() {

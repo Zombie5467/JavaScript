@@ -1,10 +1,10 @@
 
 
 function lado(numero){
-    let lado = ""; //los * de la iteracion se guardan aqui
+    let lado = ""; //los * de la iteración se guardan aquí
 
     for (let i = 0; i < numero; i++){
-        lado += "*";// aqui decimos que lo que se guarde en la variable lado sean *
+        lado += "*";// aquí decimos que lo que se guarde en la variable lado sean *
     }
 
     return lado;

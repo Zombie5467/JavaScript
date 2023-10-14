@@ -28,4 +28,4 @@ if(textoLimpio.includes(busqueda)){
 return resultado;
 }
 
-console.log("numero de coninciencias: ", encontrarCoincidencias("hello and wellcome wellcome to the best day of ur life.", "lalala"));
+console.log("numero de coincidencias: ", encontrarCoincidencias("hello and welcome welcome to the best day of ur life.", "lalala"));

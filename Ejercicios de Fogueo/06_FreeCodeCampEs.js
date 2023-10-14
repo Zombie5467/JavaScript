@@ -2,6 +2,7 @@
 // FreeCodeCamp Es
 // Números pares de un arreglo con Ciclo for
 // --------------------------------------------------------------
+
 function contarNumerosPares(arreglo) {
   var total = 0;
 
