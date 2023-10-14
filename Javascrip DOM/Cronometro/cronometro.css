@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@100;200;300;500;700&display=swap');
+
+@font-face {
+    font-family: 'Calculadora';
+    src: url(pocket_calcuatlor_ot.otf);
+}
+
+.material-symbols-outlined {
+  font-size: 3rem;
+  background: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+  /* -webkit-background-clip: text; */
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in; 
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+}
+
+
+body {
+    height: 100vh;
+
+    background: url(clockBLUE.jpg) no-repeat center center/ cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contenedor--general {
+    width: 60vw;   
+    max-width: 400px;
+    min-height: 300px;
+    
+    padding: 40px;
+    border-radius: 25px;
+    
+    background-color: rgb(32, 32, 31);
+    box-shadow: 0px 0px 20px rgba(7, 6, 6, 0.767);
+}
+
+.numeros {
+    font-size: 80px;
+    font-family: 'calculadora';
+    color: greenyellow;
+}
+
+button {
+  
+  padding: 14px;
+  border: 0;
+  background-color: transparent;
+ 
+}
+
+button:hover .material-symbols-outlined{
+  background: linear-gradient(120deg, #aad631 0%, #0fa30f 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+button:active .material-symbols-outlined {
+    opacity: .8;
+}
+

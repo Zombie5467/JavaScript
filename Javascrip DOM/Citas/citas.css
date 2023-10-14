@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@100;200;300;500;700&display=swap');
+
+body {
+    height: 100vh;
+
+    /* background-image: url(biblioteca.jpg); */
+    background: url(biblioteca.jpg) no-repeat center center/ cover;
+    /* background-repeat: no-repeat;
+    object-fit: cover; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contenedor--general {
+    width: 100vw;   
+    max-width: 800px;
+    min-height: 500px;
+    
+    padding: 40px;
+    
+    background-color: rgb(32, 32, 31);
+    box-shadow: 0px 0px 20px rgba(133, 132, 132, 0.6);
+
+    /* border-radius: 25px; */
+}
+
+h1 {
+    
+    font-family: 'Courgette', cursive;
+    font-size: 55px;
+    
+    color: aliceblue;
+
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: aliceblue;
+    
+}
+
+button {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    color: aliceblue;
+    border: 0;
+    background-color: rgb(47, 123, 223);
+    cursor: pointer;
+    transition: all ease-in .2s;
+}
+
+button:hover {
+    background-color: rgb(73, 146, 243);
+}
+button:active {
+    opacity: .8;
+}
+
+#autor {
+    color: yellow;
+    font-family: 'Courgette', cursive;
+}

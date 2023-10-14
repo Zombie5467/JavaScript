@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos Generales -->
+    <link rel="stylesheet" href="../general.css">
+      
+    <!-- Estilos Este Archivo -->
+    <link rel="stylesheet" href="rgb.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="img/png" href="icon.png">
+
+    <title>RGB Exercise</title>
+</head>
+
+<body>
+    <div class="contenedor--general">
+
+        <div class="contenedor--colores">
+
+            <!-- ------------------------------------------------------------------------ -->
+            <div>
+                <label for="rojo">Rojo (R)</label>
+                <input id="rojo" type="range" min="0" max="255" value="68" step="1" class="slider">
+                <p id="texto--rojo"></p>
+            </div>
+            
+            <!-- ------------------------------------------------------------------------ -->
+            <div>
+                <label for="verde">Verde (G)</label>
+                <input id="verde" type="range" min="0" max="255" value="68" step="1" class="slider verde">
+                <p id="texto--verde"></p>
+            </div>
+            
+            <!-- ------------------------------------------------------------------------ -->
+            <div>
+                <label for="azul">Azul (B)</label>
+                <input id="azul" type="range" min="0" max="255" value="80" step="1" class="azul slider">
+                <p id="texto--azul"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

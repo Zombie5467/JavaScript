@@ -1,0 +1,69 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(68, 80, 80);
+}
+
+.contenedor--general {
+    /* background-color: rgb(51, 51, 51); */
+    background-color: rgb(32, 32, 31);
+    box-shadow: 0px 0px 20px rgba(8, 8, 8, 0.6);
+
+    max-width: 400px;
+    min-height: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 60px;
+
+    border-radius: 12px;
+}
+
+.contenedor--colores {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    font-size: large;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 7px;  
+  /* background: rgb(6, 165, 251); */
+  background: rgb(68, 80, 80);
+  outline: none;
+  /* opacity: 0.7; */
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-top: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+  background: aliceblue;
+  cursor: pointer;
+  /* este código es para Chrome, Safari, Edge y en mi caso Opera GX */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  border-radius: 50%;
+  cursor: pointer;
+  /* este código es para Firefox */
+}
