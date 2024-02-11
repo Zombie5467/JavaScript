@@ -1,0 +1,22 @@
+*{ font-family: Arial, Helvetica, sans-serif; } 
+
+fieldset {
+    border: 1px solid #333;
+    
+}
+
+/* .name--legend{
+    color: #fff;
+} */
+
+body{ 
+    min-height: 100vh; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 1rem; 
+    border-left: 1px solid #333; 
+    border-right: 1px solid #333; 
+    background-color: rgb(32, 31, 31);
+    padding-top: 60px;
+    color: #fff;
+}
