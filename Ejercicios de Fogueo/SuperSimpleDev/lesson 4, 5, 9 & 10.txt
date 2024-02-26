@@ -1,0 +1,13 @@
+Lecciones 4 y 5 consisten en html y css, también variables en Javascript.
+Estas practicas se hicieron como parte del curso HTML y CSS, y todos los 
+ejercicios de Javascript.
+
+Los ejercicios de la lección 9 los salte porque ya he hecho muchos ejercicios
+con "onClick".
+
+Los ejercicios de la lección 10 los salte porque ya he hecho muchos ejercicios con
+el "DOM".
+
+Recordemos que la idea es ahorrar tiempo.
+
+Gracias, la Gerencia.
