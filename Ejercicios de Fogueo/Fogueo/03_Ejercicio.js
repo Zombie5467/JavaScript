@@ -13,3 +13,4 @@ function verificarPar(num) {
 }
 
 verificarPar(7);
+ 
