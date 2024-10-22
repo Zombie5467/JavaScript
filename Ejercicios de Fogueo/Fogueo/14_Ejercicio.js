@@ -1,4 +1,4 @@
-// Crear Objetos Fecha a partir d e Cadenas de Caracteres
+// Crear Objetos Fecha a partir de Cadenas de Caracteres
 
 cadenaFecha = 'May 28, 1993 13:15:17';
 let fecha = new Date(cadenaFecha);
