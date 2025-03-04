@@ -19,7 +19,7 @@ import { BasicExample } from "./components/basicDialog";
 import { NavBar } from "./components/navBar";
 import { GridExample } from "./components/gridPractice";
 import { MuiForm } from "./components/muiForm";
-import InputId from "./components/inputID";
+import InputId from "./components/inputId";
 
 // Array de películas (puedes reemplazarlo con datos reales o el resultado de un fetch más adelante)
 const movies = [
@@ -52,7 +52,7 @@ function App() {
           <Route path="/movie/:id" element={<MovieDetail movies={movies} />} />
         </Routes>
         <FavoritesList />
-        <SearchByTitle texto="Input 2" />
+        <SearchByTitle texto="Buscar por Titulo" />
       </FavoritesProvider>
       <Header texto="Saludos desde el Header" /> *
       <Saludo texto="Bienvenido a la Movie App" />
