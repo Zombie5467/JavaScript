@@ -2,6 +2,8 @@
 // Ahora agregaremos manejo de diferentes métodos HTTP (GET, POST, DELETE) en el servidor.
 //Nota, la parte 1 en realidad es el dia 4.
 
+// En el ejercicio anterior no especificamos el método HTTP de la petición, por lo que el servidor respondía a cualquier método.
+
 // 🔹 Ejercicio:
 // 1️⃣ Modifica el servidor para manejar distintos métodos HTTP.
 // 2️⃣ Responde con mensajes diferentes según el método recibido.
