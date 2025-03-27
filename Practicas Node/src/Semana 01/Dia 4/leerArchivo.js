@@ -1,4 +1,4 @@
-// Día 3: Módulos en Node.js
+// Día 4: Módulos nativos de Node.js
 
 //usando require
 // const fs = require('fs');

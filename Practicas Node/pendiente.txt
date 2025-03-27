@@ -1,0 +1,9 @@
+📌 Cómo lo aplicamos en tu roadmap
+No modificaremos el roadmap por ahora, pero en el camino te sugeriré cosas como:
+1️⃣ Mejores prácticas para consumir APIs en React.
+2️⃣ Cómo estructurar un backend mínimo viable para proyectos MERN.
+3️⃣ Conceptos clave de bases de datos que un frontend debe saber.
+4️⃣ Autenticación con JWT, que es fundamental para integrar frontend y backend.
+5️⃣ Despliegue full stack, para que puedas lanzar proyectos completos.
+
+Esto hará que tengas una visión completa, sin desviarte de tu enfoque principal: ser un experto frontend.

@@ -1,4 +1,4 @@
-// Día 3: Módulos en Node.js
+// Día 4: Módulos nativos de Node.js
 //Usando Path
 
 //para usar require tuve que cambiar la extension del archivo de .js a .cjs
