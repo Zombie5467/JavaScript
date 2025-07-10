@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Button Bug</title>
+    <style>
+      #colorBox {
+        width: 200px;
+        height: 200px;
+        background-color: lightgray;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="colorBox"></div>
+    <button id="changeColor" onclick="">Change Color</button>
+
+    <script type="module">
+        import { randomColor } from "./randomColor.js";
+
+        // usamos paréntesis porque la exportación no es default
+      
+        document
+          .getElementById("changeColor")
+          .addEventListener("click", function () {
+            let box = document.getElementById("colorBox");
+            box.style.backgroundColor = randomColor();
+            console.log("Color changed to " + box.style.backgroundColor);
+          });
+      </script>
+  </body>
+</html>

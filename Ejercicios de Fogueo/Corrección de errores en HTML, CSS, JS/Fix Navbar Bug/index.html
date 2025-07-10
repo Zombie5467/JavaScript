@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Bug</title>
+    <style>
+
+        :root {
+            --nav-height: 50px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            background-color: rgb(51, 51, 51);
+            color: white;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: var(--nav-height);
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        li {
+            margin: 0 15px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .divPadding {
+            padding-top: 50px;
+            height: 2000px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="divPadding">
+        <h1>Scroll Down Issue</h1>
+        <p>The navbar covers content when scrolling. Fix it so the content is not hidden.</p>
+    </div>
+</body>
+</html>
+
+<!-- Solución al bug del navbar -->
+ <!-- problema: el elemento en el div aparece "escondido" debajo del navbar -->
+ <!-- solución: añadir un padding-top al div que sea igual a la altura (height) del navbar -->
+ <!-- se añadió un padding-top de 50px al div para que el contenido no se esconda debajo del navbar -->
+ <!-- nota: se puede usar la variable --nav-height para hacerlo más dinámico -->
+ <!-- se trabajo directo en el navbar para cubrir futuros cambios en el tamaño del navbar -->
+ <!-- el div tiene 2000px de alto para simular contenido largo y que se pueda hacer scroll -->
+ 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Las armaduras de los Santos Dorados</p>
+    <button id="add">Agregar Armadura</button>
+
+    <script>
+      // crear un array con las armaduras
+      const armaduras = [
+        "Armadura Dorada de Aries",
+        "Armadura Dorada de Tauro",
+        "Armadura Dorada de Géminis",
+        "Armadura Dorada de Cáncer",
+        "Armadura Dorada de Leo",
+        "Armadura Dorada de Virgo",
+        "Armadura Dorada de Libra",
+        "Armadura Dorada de Escorpio",
+        "Armadura Dorada de Sagitario",
+        "Armadura Dorada de Capricornio",
+        "Armadura Dorada de Acuario",
+        "Armadura Dorada de Piscis",
+      ];
+
+      let indice = 0;
+
+      // crear una variable para el id add del boton
+      const addButton = document.getElementById("add");
+      // agregar un if para agregar armaduras si length del array es mayor que el indice
+
+      // agregar un event listener al boton con click para que el boton cree un div
+      addButton.addEventListener("click", () => {
+        if (indice < armaduras.length) {
+          // crear un nuevo elemento div
+          const newDiv = document.createElement("div");
+          // agregarle el texto del array
+          newDiv.textContent = armaduras[indice];
+          // agregarlo al body
+          document.body.appendChild(newDiv);
+          // incrementar el indice
+          indice++;
+        } else {
+             alert("Ya se han mostrado todas las armaduras.");
+            // const newDiv = document.createElement("div");
+            // newDiv.textContent = "No hay más armaduras para mostrar.";
+            // document.body.appendChild(newDiv);
+        }
+      });
+    </script>
+  </body>
+</html>
