@@ -6,6 +6,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Ejercicio para mostrar el contenido de un array en el DOM con un botón. -->
     <p>Las armaduras de los Santos Dorados</p>
     <button id="add">Agregar Armadura</button>
 
@@ -28,11 +29,11 @@
 
       let indice = 0;
 
-      // crear una variable para el id add del boton
+      // crear una variable para el id add del botón
       const addButton = document.getElementById("add");
       // agregar un if para agregar armaduras si length del array es mayor que el indice
 
-      // agregar un event listener al boton con click para que el boton cree un div
+      // agregar un event listener al botón con click para que el botón cree un div
       addButton.addEventListener("click", () => {
         if (indice < armaduras.length) {
           // crear un nuevo elemento div
@@ -45,9 +46,6 @@
           indice++;
         } else {
              alert("Ya se han mostrado todas las armaduras.");
-            // const newDiv = document.createElement("div");
-            // newDiv.textContent = "No hay más armaduras para mostrar.";
-            // document.body.appendChild(newDiv);
         }
       });
     </script>

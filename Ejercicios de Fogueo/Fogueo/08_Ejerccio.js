@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 // --------------------------------------------------------------
-// prueba
+// Prueba en consola de JavaScript
 // --------------------------------------------------------------
 
 console.log('JavaScript es Fácil');
