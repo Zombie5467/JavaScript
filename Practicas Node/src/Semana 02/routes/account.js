@@ -1,12 +1,12 @@
-import express from "express";
+import { Router } from "express";
 import { USERS_BBDD } from "../bbdd.js"; // Importamos la base de datos de usuarios
 
-const accountRouter = express.Router();
+const accountRouter = Router();
 
-//Usando middleware
+//Usando middleware para hacer log del ip
 accountRouter.use((req, res, next) => {
-    console.log(req.ip);
-    next();
+  console.log(req.ip);
+  next();
 });
 
 // Obtener los detalles de una cuenta
