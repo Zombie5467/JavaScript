@@ -2,7 +2,8 @@
 // Ahora agregaremos manejo de diferentes métodos HTTP (GET, POST, DELETE) en el servidor.
 //Nota, la parte 1 en realidad es el dia 4.
 
-// En el ejercicio anterior no especificamos el método HTTP de la petición, por lo que el servidor respondía a cualquier método.
+// En el ejercicio anterior no especificamos el método HTTP de la petición,
+// por lo que el servidor respondía a cualquier método.
 
 // 🔹 Ejercicio:
 // 1️⃣ Modifica el servidor para manejar distintos métodos HTTP.
@@ -10,40 +11,36 @@
 // 3️⃣ Procesa datos enviados en un POST.
 
 // const http = require('http');
-import {createServer} from 'http';
-import http from 'http';
+import http from "http";
+import { createServer } from "http";
 
 const server = http.createServer((req, res) => {
-    res.setHeader('Content-Type', 'application/plain');
-     
-    if (req.method === 'GET') {
-        res.writeHead(200);
-        res.end(JSON.stringify({message: 'Bienvenido al servidor Node.js'}));
-    }
-    else if (req.method === 'POST') {
-        let body = '';
+  res.setHeader("Content-Type", "application/plain");
 
-        req.on('data', chunk => {
-            body += chunk.toString();
-        })
+  if (req.method === "GET") {
+    res.writeHead(200);
+    res.end(JSON.stringify({ message: "Bienvenido al servidor Node.js" }));
+  } else if (req.method === "POST") {
+    let body = "";
 
-        req.on('end', () => {
-            res.writeHead(200);
-            res.end(JSON.stringify({message: `Datos recibidos: ${body}`}));
-        })
-    }
-    else if (req.method === 'DELETE') {
-        res.writeHead(200);
-        res.end(JSON.stringify({message: 'Recurso eliminado'}));
-    }
-    else {
-        res.writeHead(405);
-        res.end(JSON.stringify({message: 'Método no permitido'}));
-    }
+    req.on("data", (chunk) => {
+      body += chunk.toString();
+    });
 
+    req.on("end", () => {
+      res.writeHead(200);
+      res.end(JSON.stringify({ message: `Datos recibidos: ${body}` }));
+    });
+  } else if (req.method === "DELETE") {
+    res.writeHead(200);
+    res.end(JSON.stringify({ message: "Recurso eliminado" }));
+  } else {
+    res.writeHead(405);
+    res.end(JSON.stringify({ message: "Método no permitido" }));
+  }
 });
 
 const PORT = 3000;
 server.listen(PORT, () => {
-    console.log(`Servidor escuchando en el puerto ${PORT}`);
+  console.log(`Servidor escuchando en el puerto ${PORT}`);
 });

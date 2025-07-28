@@ -5,13 +5,16 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon \"src/Semana 02/app.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.4.1",
-    "express": "^4.21.2"
+    "express": "4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.10"
   }
 }
