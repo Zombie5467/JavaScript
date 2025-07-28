@@ -19,6 +19,7 @@ accountRouter.get("/:guid", (req, res) => {
 
   return res.send(user);
 });
+
 //----------------------------------------------------------------------------------
 
 //Crear una cuenta nueva a partir de guid y name

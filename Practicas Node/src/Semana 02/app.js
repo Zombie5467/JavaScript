@@ -8,6 +8,7 @@
 import dotenv from "dotenv";
 import express from "express";
 import accountRouter from "../Semana 02/routes/account.js"; // Importamos las rutas de cuenta
+import authRouter from "../Semana 02/routes/auth.js"; // Importamos las rutas de autenticación
 
 //----------------------------------------------------------------------------------
 
@@ -21,10 +22,7 @@ const expressApp = express(); // Este express() es el mismo que importamos mas a
 expressApp.use(express.json()); // Middleware para parsear JSON
 expressApp.use(express.text()); // Middleware para parsear texto
 expressApp.use( "/account", accountRouter); // un path principal para usar router
-
-expressApp.get("/raiz", (req, res) => {
-  res.send();
-});
+expressApp.use("/auth", authRouter); // Usamos el router de autenticación
 
 //----------------------------------------------------------------------------------
 
