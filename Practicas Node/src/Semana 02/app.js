@@ -5,9 +5,9 @@
      * Ejercicio: Agrega rutas para manejar POST y DELETE.
  */
 
+import cookieParser from "cookie-parser"; // Importamos cookie-parser para manejar cookies
 import dotenv from "dotenv";
 import express from "express";
-import cookieParser from "cookie-parser"; // Importamos cookie-parser para manejar cookies
 import accountRouter from "../Semana 02/routes/account.js"; // Importamos las rutas de cuenta
 import authRouter from "../Semana 02/routes/auth.js"; // Importamos las rutas de autenticación
 import sessionRouter from "./routes/authSessionRouter.js";

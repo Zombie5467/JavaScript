@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { nanoid } from "nanoid"; // Importamos nanoid para generar GUIDs
-import authApp from "../helpers/authApp.js";
 import { USERS_BBDD } from "../bbdd.js";
+import authApp from "../helpers/authApp.js";
 
 const sessions = []; // Array para almacenar las sesiones
 const sessionRouter = Router();
