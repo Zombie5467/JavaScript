@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon \"src/Semana 02/app.js\""
+    "start": "json-server --watch \"src/Semana 03/db.json\"",
+    "dev": "nodemon \"src/Semana 03/app.js\""
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "dotenv": "17.2.1",
     "express": "4.21.2",
     "jose": "6.0.12",
+    "json-server": "^1.0.0-beta.3",
     "nanoid": "^5.1.5"
   },
   "devDependencies": {

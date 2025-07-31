@@ -1,0 +1,54 @@
+{
+  "profesores": [
+    {
+      "nombre": "Juan Perez",
+      "apellido": "Gomez",
+      "materias": [
+        {
+          "nombre": "Node js desde cero"
+        },
+        {
+          "nombre": "React zero to hero"
+        },
+        {
+          "nombre": "JavaScript Avanzado"
+        }
+      ],
+      "id": "1ef7"
+    }
+  ],
+  "alumnos": [
+    {
+      "nombre": "Maria",
+      "apellido": "Martinez",
+      "promedio": 8.5,
+      "id": "c193"
+    },
+    {
+      "nombre": "Carlos",
+      "apellido": "Gonzalez",
+      "promedio": 9,
+      "id": "c5df"
+    }
+  ],
+  "cursos": [
+    {
+      "nombre": "Node js desde cero",
+      "duración": 6,
+      "dificultad": "Intermedio",
+      "id": "12bb"
+    },
+    {
+      "nombre": "React zero to hero",
+      "duración": 8,
+      "dificultad": "King of frontend",
+      "id": "ab49"
+    },
+    {
+      "nombre": "JavaScript Avanzado",
+      "duración": 6,
+      "dificultad": "Easy peasy",
+      "id": "791a"
+    }
+  ]
+}
